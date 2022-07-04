@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingTop="60dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="40dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_green_flag"
+        android:contentDescription="@string/logo_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/greenflag_info"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/museosans_500"
+        app:layout_constraintEnd_toEndOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/guideline_text_top" />
+
+    <ImageButton
+        android:id="@+id/ibtn_continue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/gradient_button_background"
+        android:backgroundTint="@color/black"
+        android:enabled="false"
+        android:contentDescription="@string/ibtn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_btn_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_tick_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:contentDescription="@string/tick"
+        app:layout_constraintStart_toStartOf="@id/tv_main_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_content" />
+
+    <ImageView
+        android:id="@+id/iv_tick_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:contentDescription="@string/tick"
+        app:layout_constraintStart_toStartOf="@id/tv_main_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_tick_top" />
+
+    <ImageView
+        android:id="@+id/iv_tick_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:contentDescription="@string/tick"
+        app:layout_constraintStart_toStartOf="@id/tv_main_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_tick_mid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tick_top"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/museosans_300"
+        app:layout_constraintStart_toEndOf="@id/iv_tick_top"
+        app:layout_constraintBottom_toBottomOf="@id/iv_tick_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tick_mid"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/museosans_300"
+        app:layout_constraintStart_toEndOf="@id/iv_tick_mid"
+        app:layout_constraintBottom_toBottomOf="@id/iv_tick_mid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tick_bot"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/museosans_300"
+        app:layout_constraintStart_toEndOf="@id/iv_tick_bot"
+        app:layout_constraintBottom_toBottomOf="@id/iv_tick_bot" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ibtn_text"
+        android:textColor="@color/black"
+        android:fontFamily="@font/museosans_300"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/ibtn_continue"
+        app:layout_constraintBottom_toBottomOf="@id/ibtn_continue"
+        app:layout_constraintStart_toStartOf="@id/ibtn_continue"
+        app:layout_constraintEnd_toEndOf="@id/ibtn_continue" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_btn_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_text_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

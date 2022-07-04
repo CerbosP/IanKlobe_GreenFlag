@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">IanKlobe_GreenFlag</string>
+    <string name="greenflag_info">GreenFlag customers can create an account to access</string>
+    <string name="ibtn_text">Create an account</string>
+    <string name="tick_top">Car health updates</string>
+    <string name="tick_mid">Request a rescue online</string>
+    <string name="tick_bot">Policy information</string>
+    <string name="logo_content">Green Flag, No Matter What</string>
+    <string name="tick">Tick</string>
+    <string name="next">Next</string>
+    <string name="requirements">You password should have a minimum of 8 characters and contain at least one number, one uppercase and one lower case letter. You can use special characters.</string>
+    <string name="criteria">See criteria below</string>
+    <string name="mismatch">Your passwords don\'t match</string>
+    <string name="email">An account already exists for that email address</string>
+    <string name="invalid">One of the passwords you entered wasn\'t valid</string>
+    <string name="back_description">Back to home page</string>
+    <string name="email_address">Email Address</string>
+    <string name="create_password">Create Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="password_check">Password Check</string>
+    <string name="email_check">Email Check</string>
+    <string name="retype_check">Retype Check</string>
+    <string name="password_error">Password Error</string>
+    <string name="email_error">Email Error</string>
+    <string name="empty_hint" />
+</resources>
