@@ -121,9 +121,9 @@ public class RegisterActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 // This will check if the user input (password) is valid and then check
                 // if all three input fields are valid
-                validPassword = isValidPassword(etPassword.getText().toString());
                 validRetype = isValidRetype(etPassword.getText().toString(),
                         etPasswordRetype.getText().toString());
+                validPassword = isValidPassword(etPassword.getText().toString());
                 correctCredentials(validEmail, validPassword ,validRetype);
             }
         });
